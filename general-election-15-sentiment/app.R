@@ -28,45 +28,45 @@ ui <- dashboardPage(
         fluidRow(
           box(
             title = "PH", "76 seats", width = 2, height = 150,
-            status = "info", solidHeader = TRUE#, imageOutput("ph_img")
+            status = "info", solidHeader = TRUE, imageOutput("ph_img")
           ),
           box(
             title = "PN", "52 seats", width = 2, height = 150,
-            status = "info", solidHeader = TRUE#, imageOutput("pn_img")
+            status = "info", solidHeader = TRUE, imageOutput("pn_img")
           ),
           box(
             title = "BN", "30 seats", width = 2, height = 150,
-            status = "info", solidHeader = TRUE#, imageOutput("bn_img")
+            status = "info", solidHeader = TRUE, imageOutput("bn_img")
           ),
           box(
             title = "GPS", "23 seats", width = 2, height = 150, 
-            status = "info", solidHeader = TRUE#, imageOutput("gps_img")
+            status = "info", solidHeader = TRUE, imageOutput("gps_img")
           ),
           box(
             title = "PAS", "22 seats", width = 2, height = 150,
-            status = "info", solidHeader = TRUE#, imageOutput("pas_img")
+            status = "info", solidHeader = TRUE, imageOutput("pas_img")
           )
         ),
         fluidRow(
           box(
             title = "GRS", "6 seats", width = 2, height = 150, 
-            status = "info", solidHeader = TRUE#, imageOutput("grs_img")
+            status = "info", solidHeader = TRUE, imageOutput("grs_img")
           ),
           box(
             title = "DAP", "5 seats", width = 2, height = 150,
-            status = "info", solidHeader = TRUE#, imageOutput("dap_img")
+            status = "info", solidHeader = TRUE, imageOutput("dap_img")
           ),
           box(
             title = "WARISAN", "3 seats", width = 2, height = 150, 
-            status = "info", solidHeader = TRUE#, imageOutput("warisan_img")
+            status = "info", solidHeader = TRUE, imageOutput("warisan_img")
           ),
           box(
             title = "BEBAS", "2 seats", width = 2, height = 150,
-            status = "info", solidHeader = TRUE#, imageOutput("bbs_img")
+            status = "info", solidHeader = TRUE, imageOutput("bbs_img")
           ),
           box(
             title = "MUDA", "1 seat", width = 2, height = 150, 
-            status = "info", solidHeader = TRUE#, imageOutput("muda_img")
+            status = "info", solidHeader = TRUE, imageOutput("muda_img")
           )
         )
       ),
@@ -144,7 +144,38 @@ ui <- dashboardPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
 
-    
+  output$ph_img <- renderImage({
+    list(src = "www/ph.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$pn_img <- renderImage({
+    list(src = "www/pn.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$bn_img <- renderImage({
+    list(src = "www/bn.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$gps_img <- renderImage({
+    list(src = "www/gps.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$pas_img <- renderImage({
+    list(src = "www/pas.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$grs_img <- renderImage({
+    list(src = "www/grs.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$dap_img <- renderImage({
+    list(src = "www/dap.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$warisan_img <- renderImage({
+    list(src = "www/warisan.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$bbs_img <- renderImage({
+    list(src = "www/bbs.png", width = 100, height = 70)
+  }, deleteFile = F)
+  output$muda_img <- renderImage({
+    list(src = "www/muda.png", width = 100, height = 70)
+  }, deleteFile = F)
+  
+  
 }
 
 # Run the application 
