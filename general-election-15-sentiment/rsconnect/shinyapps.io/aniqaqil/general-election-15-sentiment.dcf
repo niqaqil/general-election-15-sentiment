@@ -5,9 +5,9 @@ account: aniqaqil
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8062060
-bundleId: 6746474
+bundleId: 6746532
 url: https://aniqaqil.shinyapps.io/general-election-15-sentiment/
-when: 1674032926.47752
-lastSyncTime: 1674032926.47752
+when: 1674033889.57448
+lastSyncTime: 1674033889.57448
 asMultiple: FALSE
 asStatic: FALSE
